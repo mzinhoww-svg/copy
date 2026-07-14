@@ -1,0 +1,9 @@
+{
+  "projectId": "c4b78d79-ba01-4cb7-822b-86a29ba5e6ba",
+  "pkg": "reiners-media-design-system",
+  "globalName": "ReinersMedia",
+  "shape": "package",
+  "offScript": true,
+  "readmeHeader": ".design-sync/conventions.md",
+  "note": "Foundations-only, hand-authored (off-script) design system built from the Reiners Media Brand Guideline (Edição 02) + LLM System Prompt. There is no source component library to convert — the ds-bundle/ is authored directly and rebuilt via the .design-sync/*.mjs scripts, then verified with .ds-sync/package-validate.mjs. See NOTES.md."
+}

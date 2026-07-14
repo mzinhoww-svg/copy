@@ -1,0 +1,60 @@
+/* Reiners Media — Spacing, grid, radius & elevation tokens
+   (Brand Guideline §07, §08, §14). Everything is a multiple of the 8px base.
+   Values off the scale (10px, 18px, 50px) are forbidden — round to the nearest
+   token. */
+:root {
+  /* 8px spacing scale (§08) */
+  --space-1: 4px;    /* minimal gap (icon ↔ microlabel) */
+  --space-2: 8px;    /* base unit */
+  --space-3: 16px;   /* related elements inside a component */
+  --space-4: 24px;   /* gap between cards / grid items */
+  --space-5: 32px;   /* card / container inner padding */
+  --space-6: 40px;   /* gap between structural blocks */
+  --space-7: 56px;   /* section side padding (desktop) */
+  --space-8: 64px;   /* gap between large structural columns */
+  --space-9: 96px;   /* section vertical padding (desktop) */
+  --space-10: 120px; /* highlight / closing (manifesto) vertical padding */
+
+  /* Grid & layout (§07) */
+  --grid-base: 8px;
+  --grid-columns: 12;
+  --content-max: 1180px;    /* max reading/content width, centered */
+  --section-pad-y: var(--space-9);
+  --section-pad-x: var(--space-7);
+  --section-pad-x-mobile: 24px;
+  --gap-grid: var(--space-4);
+  --gap-structural: var(--space-8);
+
+  /* Radius (§14.2) — 6px is the geometric signature. Never 0, never > 12px. */
+  --radius-sm: 4px;     /* badges, chips */
+  --radius-md: 6px;     /* default: cards, containers, buttons, images */
+  --radius-full: 999px; /* pills, avatars */
+
+  /* Borders & rules (§14.1, §17.2) */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+  --rule-width: 1px;
+  --icon-stroke: 1.5px;   /* icon stroke (§09.1) */
+  --icon-grid: 24px;      /* icon artboard */
+
+  /* Elevation — the brand is FLAT. There is no box-shadow token: elevation is
+     background contrast + a 1px border, never a projected shadow (§14.3). */
+  --elevation: none;
+
+  /* Transparency (§14.4) — low-opacity gold fills behind icons/symbols. */
+  --gold-fill-soft: rgba(196, 161, 90, 0.10);
+  --gold-fill-softer: rgba(154, 123, 53, 0.06);
+  /* Photo legibility overlay — the ONLY decorative-ish gradient allowed (§11.4) */
+  --photo-scrim: linear-gradient(transparent, rgba(20, 36, 62, 0.92));
+
+  /* Signature dot-mesh texture (§18.1) — a monochrome dot pattern, not a
+     colour transition. Apply over Navy grounds at container opacity ~0.5. */
+  --dot-mesh: radial-gradient(circle at 1px 1px, rgba(196, 161, 90, 0.16) 1px, transparent 0);
+  --dot-mesh-size: 28px;
+
+  /* Motion (§19) — sober, never playful. */
+  --motion-fast: 200ms;
+  --motion-base: 300ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: ease-in-out;
+}
