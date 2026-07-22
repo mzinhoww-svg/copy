@@ -1,0 +1,45 @@
+<!-- @dsCard group="Brand" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { margin: 0; padding: 40px; background: var(--creme); }
+    #root { max-width: 1100px; margin: 0 auto; }
+    .rm-doc-kicker { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ouro); margin: 0 0 10px; }
+    .rm-doc-title { font-family: var(--serif); font-weight: 300; font-size: 40px; line-height: 1.05; color: var(--navy); margin: 0 0 8px; }
+    .rm-doc-rule { width: 54px; height: 1px; background: var(--ouro); border: 0; margin: 0 0 32px; }
+    .rm-note { font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--medio); }
+  </style>
+</head><body>
+  <div id="root">
+    <p class="rm-doc-kicker">04 · 18 — Brand marks</p>
+    <h1 class="rm-doc-title">Wordmark & Textures</h1>
+    <hr class="rm-doc-rule">
+    
+    <div style="background:var(--navy);border-radius:6px;padding:56px 40px;position:relative;overflow:hidden">
+      <div style="position:absolute;inset:0;background:var(--dot-mesh);background-size:var(--dot-mesh-size) var(--dot-mesh-size);opacity:.5"></div>
+      <div style="position:relative;text-align:center">
+        <div style="font-family:var(--serif);font-weight:700;font-size:34px;letter-spacing:.18em;color:var(--creme)">REINERS <span style="color:var(--ouro-claro)">MEDIA</span></div>
+        <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.24em;color:var(--ouro-palido);margin-top:14px">Presença que posiciona</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px">
+      <figure style="margin:0">
+        <div style="height:150px;border-radius:6px;background:var(--navy);position:relative;overflow:hidden">
+          <div style="position:absolute;inset:0;background:var(--dot-mesh);background-size:var(--dot-mesh-size) var(--dot-mesh-size);opacity:.6"></div>
+        </div>
+        <figcaption class="rm-note" style="margin-top:10px"><strong style="color:var(--navy);font-weight:500">Dot mesh (§18.1)</strong> — monochrome radial-gradient dots over Navy. A texture, not a colour transition.</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="height:150px;border-radius:6px;background:var(--creme);border:1px solid var(--ouro-palido);position:relative">
+          <span style="position:absolute;top:14px;left:14px;width:34px;height:34px;border-top:2px solid var(--ouro);border-left:2px solid var(--ouro)"></span>
+          <span style="position:absolute;bottom:14px;right:14px;width:34px;height:34px;border-bottom:2px solid var(--ouro);border-right:2px solid var(--ouro)"></span>
+        </div>
+        <figcaption class="rm-note" style="margin-top:10px"><strong style="color:var(--navy);font-weight:500">Corner frame (§18.2)</strong> — two active corners, top-left + bottom-right. Frames photos and highlight blocks.</figcaption>
+      </figure>
+    </div>
+    <p class="rm-note" style="margin-top:24px">The wordmark is "REINERS" in Cormorant 700 (tracking 0.18em) with "MEDIA" in Ouro Claro. The microphone <em style="font-style:normal;color:var(--navy)">symbol</em> ships as a separate SVG asset — never recreate it by hand. Textures never compete: one dominant texture per surface.</p>
+  
+  </div>
+</body></html>

@@ -1,0 +1,76 @@
+<!-- @dsCard group="Spacing" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { margin: 0; padding: 40px; background: var(--creme); }
+    #root { max-width: 1100px; margin: 0 auto; }
+    .rm-doc-kicker { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ouro); margin: 0 0 10px; }
+    .rm-doc-title { font-family: var(--serif); font-weight: 300; font-size: 40px; line-height: 1.05; color: var(--navy); margin: 0 0 8px; }
+    .rm-doc-rule { width: 54px; height: 1px; background: var(--ouro); border: 0; margin: 0 0 32px; }
+    .rm-note { font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--medio); }
+  </style>
+</head><body>
+  <div id="root">
+    <p class="rm-doc-kicker">08 — 8px scale</p>
+    <h1 class="rm-doc-title">Spacing</h1>
+    <hr class="rm-doc-rule">
+    
+    <div style="display:flex;flex-direction:column;gap:14px">
+      
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-1</code>
+        <div style="height:16px;width:4px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">4px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-2</code>
+        <div style="height:16px;width:8px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">8px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-3</code>
+        <div style="height:16px;width:16px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">16px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-4</code>
+        <div style="height:16px;width:24px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">24px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-5</code>
+        <div style="height:16px;width:32px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">32px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-6</code>
+        <div style="height:16px;width:40px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">40px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-7</code>
+        <div style="height:16px;width:56px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">56px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-8</code>
+        <div style="height:16px;width:64px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">64px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-9</code>
+        <div style="height:16px;width:96px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">96px</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px">
+        <code style="font-family:var(--mono);font-size:12px;color:var(--navy);width:96px">--space-10</code>
+        <div style="height:16px;width:120px;background:var(--ouro);border-radius:2px"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--medio)">120px</span>
+      </div>
+    </div>
+    <p class="rm-note" style="margin-top:28px">Everything is a multiple of the <strong style="color:var(--navy);font-weight:500">8px base</strong>. Off-scale values (10px, 18px, 50px) are forbidden — round to the nearest token. Section vertical padding 96px desktop, content max-width 1180px, 12-column grid.</p>
+  
+  </div>
+</body></html>

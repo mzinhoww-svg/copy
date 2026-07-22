@@ -1,0 +1,43 @@
+/* Reiners Media — Design System stylesheet entry.
+   This is the ONE file to link. Rendered designs receive only this file's
+   transitive @import closure, so every token, font and base rule the brand
+   needs is reachable from here. */
+
+@import "./fonts/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+
+/* --- Base layer -----------------------------------------------------------
+   A sober, on-brand baseline so anything built on this system starts correct:
+   Creme ground, Tinta body text in DM Sans at 1.7 leading, serif headings.
+   Override with tokens, never with off-palette values. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2 { font-family: var(--serif); color: var(--navy); margin: 0 0 var(--space-3); }
+h1 { font-weight: var(--weight-light); font-size: var(--fs-h1); line-height: var(--lh-h1); letter-spacing: -0.01em; }
+h2 { font-weight: var(--weight-semibold); font-size: var(--fs-h2); line-height: var(--lh-h2); }
+h3 { font-family: var(--sans); font-weight: var(--weight-medium); font-size: var(--fs-h3); line-height: var(--lh-h3); color: var(--navy); margin: 0 0 var(--space-2); }
+
+p { margin: 0 0 var(--space-3); }
+a { color: var(--ouro); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+em { font-family: var(--serif); font-style: italic; color: var(--ouro-claro); }
+
+hr { border: 0; border-top: var(--rule-width) solid var(--ouro-palido); margin: var(--space-6) 0; }
+
+:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 2px; } /* §20 — never remove focus */
+
+::selection { background: var(--ouro-palido); color: var(--tinta); }

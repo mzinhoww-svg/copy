@@ -1,0 +1,9 @@
+{
+  "namespace": "ReinersMedia",
+  "source": "reiners-media-design-system@1.0.0",
+  "shape": "package",
+  "provider": null,
+  "componentCount": 6,
+  "skippedStoryIds": [],
+  "runtimeFontPrefixes": []
+}

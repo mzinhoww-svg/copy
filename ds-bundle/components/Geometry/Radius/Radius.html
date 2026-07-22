@@ -1,0 +1,55 @@
+<!-- @dsCard group="Geometry" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { margin: 0; padding: 40px; background: var(--creme); }
+    #root { max-width: 1100px; margin: 0 auto; }
+    .rm-doc-kicker { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ouro); margin: 0 0 10px; }
+    .rm-doc-title { font-family: var(--serif); font-weight: 300; font-size: 40px; line-height: 1.05; color: var(--navy); margin: 0 0 8px; }
+    .rm-doc-rule { width: 54px; height: 1px; background: var(--ouro); border: 0; margin: 0 0 32px; }
+    .rm-note { font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--medio); }
+  </style>
+</head><body>
+  <div id="root">
+    <p class="rm-doc-kicker">14 — Radius & elevation</p>
+    <h1 class="rm-doc-title">Geometry</h1>
+    <hr class="rm-doc-rule">
+    
+    <div style="display:flex;gap:40px;flex-wrap:wrap;align-items:flex-end">
+      
+      <figure style="margin:0;text-align:center">
+        <div style="width:120px;height:120px;background:var(--creme);border:1px solid var(--ouro-palido);border-radius:4px"></div>
+        <figcaption style="margin-top:12px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--navy)">--radius-sm</div>
+          <div style="font-family:var(--sans);font-size:12px;color:var(--medio);margin-top:2px">4px · Badges, chips</div>
+        </figcaption>
+      </figure>
+      <figure style="margin:0;text-align:center">
+        <div style="width:120px;height:120px;background:var(--creme);border:1px solid var(--ouro-palido);border-radius:6px"></div>
+        <figcaption style="margin-top:12px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--navy)">--radius-md</div>
+          <div style="font-family:var(--sans);font-size:12px;color:var(--medio);margin-top:2px">6px · Cards, buttons, images</div>
+        </figcaption>
+      </figure>
+      <figure style="margin:0;text-align:center">
+        <div style="width:120px;height:120px;background:var(--creme);border:1px solid var(--ouro-palido);border-radius:999px"></div>
+        <figcaption style="margin-top:12px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--navy)">--radius-full</div>
+          <div style="font-family:var(--sans);font-size:12px;color:var(--medio);margin-top:2px">999px · Pills, avatars</div>
+        </figcaption>
+      </figure>
+    </div>
+    <div style="margin-top:40px;display:flex;gap:24px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px;background:var(--pergaminho);border-radius:6px;padding:28px">
+        <div style="background:var(--creme);border:1px solid var(--ouro-palido);border-radius:6px;padding:20px;font-family:var(--sans);font-size:14px;color:var(--navy)">Elevation without shadow</div>
+        <p class="rm-note" style="margin:14px 0 0">Creme card on a Pergaminho ground + 1px Ouro Pálido border. This is how the brand shows "layering".</p>
+      </div>
+      <div style="flex:1;min-width:240px;padding:28px">
+        <p class="rm-note" style="margin:0"><strong style="color:var(--navy);font-weight:500">The brand is flat.</strong> There is no <code>box-shadow</code> token. Elevation comes from background contrast + a 1px border, never a projected shadow. Radius 6px is the geometric signature — never 0, never above 12px.</p>
+      </div>
+    </div>
+  
+  </div>
+</body></html>

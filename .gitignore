@@ -47,3 +47,10 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# design-sync (Reiners Media)
+.ds-sync/
+ds-bundle/_screenshots/
+ds-bundle/.render-check.json
+ds-bundle/.review.html
+.design-sync/.cache/

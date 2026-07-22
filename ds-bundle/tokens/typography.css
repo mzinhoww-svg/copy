@@ -1,0 +1,54 @@
+/* Reiners Media — Typography tokens (Brand Guideline §06).
+   Three families, nothing else. Serif for titles + emotion, Sans for reading +
+   function, Mono only for labels/kickers — never a fourth family, never Mono in
+   running text, never Bold Cormorant for body. */
+:root {
+  /* Families — fallbacks are mandatory, never omit them (§06.1) */
+  --serif: 'Cormorant Garamond', Georgia, serif;      /* H1/H2, quotes, emphasis italic */
+  --sans:  'DM Sans', system-ui, sans-serif;          /* Body, H3, UI, buttons, captions */
+  --mono:  'DM Mono', 'SFMono-Regular', monospace;    /* Kickers, labels, numbers, specs */
+
+  /* Weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;   /* Cormorant H2 / KPI numbers */
+  --weight-bold: 700;       /* reserved for the "REINERS" wordmark only */
+
+  /* Type scale (desktop) — see hierarchy below (§06.2) */
+  --fs-h1: clamp(40px, 6vw, 72px);
+  --fs-h2: 40px;
+  --fs-h3: 20px;
+  --fs-body: 16px;
+  --fs-body-lg: 18px;
+  --fs-caption: 13px;
+  --fs-kicker: 12px;   /* range 9–13px */
+  --fs-min: 14px;      /* absolute minimum body on web (§06.3) — never smaller */
+
+  /* Line heights */
+  --lh-h1: 1.02;
+  --lh-h2: 1.12;
+  --lh-h3: 1.2;
+  --lh-body: 1.7;      /* default running-text leading (§06.6) */
+  --lh-caption: 1.6;
+
+  /* Tracking */
+  --tracking-kicker: 0.18em;   /* range 0.14em–0.2em, uppercase (§06.2) */
+  --tracking-wordmark: 0.18em; /* "REINERS MEDIA" 0.16em–0.2em (§06.6) */
+  --tracking-body: 0;
+
+  /* Semantic roles */
+  --font-title: var(--serif);
+  --font-body: var(--sans);
+  --font-label: var(--mono);
+}
+
+/* Reusable text roles — apply the class or copy the declarations. */
+.rm-h1 { font-family: var(--serif); font-weight: var(--weight-light); font-size: var(--fs-h1); line-height: var(--lh-h1); letter-spacing: -0.01em; }
+.rm-h2 { font-family: var(--serif); font-weight: var(--weight-semibold); font-size: var(--fs-h2); line-height: var(--lh-h2); }
+.rm-h3 { font-family: var(--sans); font-weight: var(--weight-medium); font-size: var(--fs-h3); line-height: var(--lh-h3); }
+.rm-body { font-family: var(--sans); font-weight: var(--weight-regular); font-size: var(--fs-body); line-height: var(--lh-body); }
+.rm-caption { font-family: var(--sans); font-weight: var(--weight-regular); font-size: var(--fs-caption); line-height: var(--lh-caption); color: var(--medio); }
+.rm-kicker { font-family: var(--mono); font-weight: var(--weight-medium); font-size: var(--fs-kicker); line-height: 1.7; text-transform: uppercase; letter-spacing: var(--tracking-kicker); color: var(--ouro); }
+/* Emphasis: at most ONE gold serif italic per title (§06.4). */
+.rm-em { font-family: var(--serif); font-style: italic; color: var(--ouro-claro); }

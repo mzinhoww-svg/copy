@@ -1,0 +1,41 @@
+/* Reiners Media — Colour tokens (Brand Guideline §05). Values are the single
+   source of truth: use these exact hexes, never approximations. No colour
+   outside this list is permitted in any brand piece (the sole exception,
+   #B4472F, is a training-material "incorrect use" marker — never in real
+   published pieces, so it is deliberately NOT tokenised here). */
+:root {
+  /* Core (§05.1) */
+  --navy: #14243E;   /* Cor-base institucional. Dark backgrounds, titles on light. */
+  --ouro: #9A7B35;   /* Accent primary. Details, icons, rules, emphasis italics. */
+  --creme: #FAF7F2;  /* Dominant light background (base of the 60% usage). */
+  --tinta: #1A1510;  /* Body text on light; near-black footers / manifesto. */
+
+  /* Support (§05.2) */
+  --aco: #2C4A72;         /* Cool variation of Navy — secondary contrast. */
+  --ouro-claro: #C4A15A;  /* Light gold — gold on dark grounds (Navy/Tinta). */
+  --ouro-palido: #E8D9B5; /* Pale gold — hairline rules, secondary text on Navy. */
+  --pergaminho: #F0EBE1;  /* Parchment — alternates with Creme for section rhythm. */
+  --medio: #5E5549;       /* Warm grey — secondary body text / captions on light. */
+  --claro: #9E9287;       /* Softer warm grey — metadata, tertiary text, watermarks. */
+
+  /* Semantic aliases — resolve to the tokens above. There is no red/green in
+     the palette; status is carried by tonal variation + explicit text, never
+     traffic-light colour (§15.3). */
+  --bg: var(--creme);
+  --bg-alt: var(--pergaminho);
+  --bg-dark: var(--navy);
+  --bg-darker: var(--tinta);
+  --text: var(--tinta);
+  --text-secondary: var(--medio);
+  --text-tertiary: var(--claro);
+  --text-on-dark: var(--creme);
+  --text-secondary-on-dark: var(--ouro-palido);
+  --accent: var(--ouro);
+  --accent-on-dark: var(--ouro-claro);
+  --border: var(--ouro-palido);   /* 1px card/container border (§14.1) */
+  --rule: var(--ouro-palido);     /* hairline divider (§17.2) */
+  --border-strong: var(--navy);   /* 2px structural block border (§14.1) */
+
+  /* Composition target (§05.3): 60% Creme · 28% Navy · 12% Ouro.
+     Gold is ACCENT only — never a large fill (§05.4). */
+}
